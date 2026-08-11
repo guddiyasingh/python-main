@@ -1,0 +1,14 @@
+2026-08-11 12:23:52,934 - INFO - Starting data analysis
+2026-08-11 12:23:52,935 - ERROR - sales_data.csv was not found
+2026-08-11 13:02:18,988 - INFO - This is an info message
+2026-08-11 13:02:18,989 - WARNING - This is an info message
+2026-08-11 13:02:18,989 - ERROR - This is an error message
+2026-08-11 13:02:18,990 - CRITICAL - This is a critical message
+2026-08-11 13:02:44,842 - INFO - This is an info message
+2026-08-11 13:02:44,842 - WARNING - This is an info message
+2026-08-11 13:02:44,843 - ERROR - This is an error message
+2026-08-11 13:02:44,843 - CRITICAL - This is a critical message
+2026-08-11 13:04:49,982 - INFO - This is an info message
+2026-08-11 13:04:49,983 - WARNING - This is an info message
+2026-08-11 13:04:49,984 - ERROR - This is an error message
+2026-08-11 13:04:49,984 - CRITICAL - This is a critical message
