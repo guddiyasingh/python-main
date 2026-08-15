@@ -16,7 +16,7 @@ def cube_numbers():
         time.sleep(1.5)
         print(f"Cube:{i*i*i}")
 
-if__name__=="__main__":
+if __name__== "__main__":
 
  ## create 2 processes
  p1 = multiprocessing.Process(target=square_numbers)    
