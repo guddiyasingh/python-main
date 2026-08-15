@@ -19,6 +19,8 @@ def print_letter():
 ##Create 2 threades
 t1=threading.Thread(target=print_numbers)
 t2=threading.Thread(target=print_letter)
+# print_numbers()
+# print_letter()
 
 t = time.time()
 ## Start the thread
