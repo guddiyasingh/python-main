@@ -27,7 +27,7 @@ if __name__== "__main__":
  ##start the process
 
  p1.start()
- p1.start()
+ p2.start()
 
  ## Wait for the process to complete
 
