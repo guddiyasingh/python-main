@@ -5,7 +5,7 @@ from concurrent.futures import ThreadPoolExecutor
 import time
 
 def print_number(number):
-    time.sleep(1)
+    time.sleep(2)
     return f"Number :{number}"
 
 numbers=[1,2,3,4,5]
