@@ -10,5 +10,10 @@ from bs4 import BeautifulSoup
 
 urls=[
 
-'https://www.langchain.com/'
-]
+'https://docs.langchain.com/oss/python/integrations/providers/overview'
+] 
+
+def fetch_content(url):
+    response=requests.get(url)
+    soup=BeautifulSoup(response.content,'html.parser')
+    print(f'Fetched{(len(soup.text))}')
