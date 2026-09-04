@@ -61,5 +61,16 @@ def successres(score):
     
     return render_template('result1.html',results=exp)
 
+@app.route('/successif/<int:score>')
+def successif(score):
+    res=""
+    if score>=50:
+        res="PASSED"
+    else:
+        res="FAILED"
+
+    return render_template('result.html',results=res)
+  
+
 if __name__=="__main__":
     app.run(debug=True) 
