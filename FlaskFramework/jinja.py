@@ -50,7 +50,7 @@ def success(score):
     return render_template('result.html',results=res)
 
 @app.route('/successres/<int:score>')
-def success(score):
+def successres(score):
     res=""
     if score>=50:
         res="PASSED"

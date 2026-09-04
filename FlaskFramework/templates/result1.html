@@ -2,16 +2,13 @@
 <html>
 <h2>Final Results</h2>
 <body>
-   <table border=2>
+  
     {% for key,value in results.items() %}
-        <tr>
-            {# This is the commit  section #}
-        </tr>
-        <th>
-          {{key}}  
-        </th>
-        <tr>{{value}}</tr>
-   </table>
+       
+    {# This is the commit  section #}
+       <h1>{{key}}</h1>
+      <h2>{{value}}</h2>
 
+        {% endfor %}
 </body>
 </html>
