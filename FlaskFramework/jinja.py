@@ -11,7 +11,8 @@
 '''
 
 
-from flask import Flask,render_template,request
+from flask import Flask,render_template,request,redirect,url_for
+
 '''
 It creates an instance of the Flask class,
 which will be your WSGI (Web Server Gateway INterface) application.'''
@@ -73,13 +74,13 @@ def fail(score):
 def sumbit():
     total_score=0
     if request.method=='POST':
-        science=float(request.form['science'])
+        # science=float(request.form['science'])
         maths=float(request.form['maths'])
         c=float(request.form['c'])
         data_science=float(request.form['datascience'])
 
 
-        total_score=(science+maths+c+data_science)/4
+        total_score=(maths+c+data_science)/3
     return redirect(url_for('successres',score=total_score))    
 
 if __name__=="__main__":
