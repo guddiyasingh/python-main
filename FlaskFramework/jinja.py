@@ -70,18 +70,18 @@ def successif(score):
 def fail(score):
     return render_template('result.html',results=score)
 
-@app.route('/sumbit',methods=['POST','GET'])
-def sumbit():
-    total_score=0
-    if request.method=='POST':
-        # science=float(request.form['science'])
-        maths=float(request.form['maths'])
-        c=float(request.form['c'])
-        data_science=float(request.form['datascience'])
+@app.route('/submit',methods=['POST','GET'])
+def submit():
+     total_score=0
+     if request.method=='POST':
+         science=float(request.form['science'])
+         maths=float(request.form['maths'])
+         c=float(request.form['c'])
+         data_science=float(request.form['datascience'])
 
 
-        total_score=(maths+c+data_science)/3
-    return redirect(url_for('successres',score=total_score))    
+         total_score=(science+maths+c+data_science)/4
+     return redirect(url_for('successres',score=total_score))    
 
 if __name__=="__main__":
     app.run(debug=True) 
