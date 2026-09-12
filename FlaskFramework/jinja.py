@@ -70,8 +70,8 @@ def successif(score):
 def fail(score):
     return render_template('result.html',results=score)
 
-@app.route('/submit',methods=['POST','GET'])
-def submit():
+@app.route('/Form_submit',methods=['POST','GET'])
+def Form_submit():
      total_score=0
      if request.method=='POST':
          science=float(request.form['science'])
