@@ -51,10 +51,13 @@ def create_item():
     @app.route('/items/<int:item_id',methods=['PUT'])
     def update_item(item_id):
         item = next((item for item in items if item['id'] == item_id), None)
-        if not item:
+        if item is None:
             return jsonify({"error": "Item not found"})
         item.update(request.json)
         return jsonify(item)
+# DELETE: Delete an existing item
+    @app.route('/items/<int:item_id>', methods=['DELETE'])
+    
 
 if __name__ == '__main__':
     app.run(debug=True)
