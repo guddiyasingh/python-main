@@ -21,3 +21,10 @@ sepal_length = st.sidebar.slider("Sepal Length",float(df['sepal length (cm)'].mi
 sepal_width = st.sidebar.slider("Sepal width",float(df['sepal width(cm)'].min()),float(df['sepal width (cm)'].max()))
 petal_length = st.sidebar.slider("Petal length",float(df['petal length (cm)'].min()),float(df['petal length (cm)'].max()))
 petal_width = st.sidebar.slider("Petal width",float(df['petal width (cm)'].min()),float(df['petal width (cm)'].max()))
+
+input_data = pd.DataFrame({
+    'sepal length (cm)': [sepal_length],
+    'sepal width (cm)': [sepal_width],
+    'petal length (cm)': [petal_length],
+    'petal width (cm)': [petal_width]
+})
